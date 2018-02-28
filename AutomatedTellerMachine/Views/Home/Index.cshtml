@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-circle-arrow-down"></span>
+            Withdrawal
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-flash"></span>
+            Quick Cash $100
+        </a>
+        <a href="@Url.Action("Details","CheckingAccount")" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-question-sign"></span>
+            Balance Inquiry
+        </a>
+    </div>
+    <div class="col-md-6 margin-top-20">
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-print"></span>
+            Print Statement
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-transfer"></span>
+            Tranfer Funds
+        </a>
+        <a href="#" class="btn btn-primary btn-large btn-block">
+            <span class="glyphicon glyphicon-circle-arrow-up"></span>
+            Deopsit
+        </a>
+    </div>
+    </div>
+</div>
+
+
+
+
+@*<div class="jumbotron">
+    <h1>Middle Valley Community Bank</h1>
+    <p class="lead">Middle Valley Community Bank offers the first-ever web-based ATM.
+    Give it at try today!</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Powered by ASP.NET</a></p>
+</div>*@
+
+@*<div class="row">
+    <div class="col-md-4">
+        <h2>Register</h2>
+        <p>
+            Open an account with ud
+        </p>
+        <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Log in</h2>
+        <p>Access your existing accont</p>
+        <p>@Html.ActionLink("Log in", "Login", "Account", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>*@
+
+
+@*
+You are using @Request.Browser.Browser, and that's OK!
+
+@{ var amounts = new List<decimal> { 100, 25.50m, -40, 275.99m };
+}
+
+<ul>
+    @foreach (decimal amount in amounts)
+    {
+    <li>@formatAmount(amount)</li>
+    }
+</ul>
+
+
+    @helper formatAmount(decimal amount) {
+        var color = "green";
+        if (amount<0)
+        {
+                color = "red";
+        }
+        <span style="color:@color">@String.Format("{0:c}",amount)</span>
+    }
+*@
