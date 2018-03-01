@@ -1,4 +1,6 @@
 ﻿using AutomatedTellerMachine.ActionFilers;
+using AutomatedTellerMachine.Models;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,12 +10,17 @@ using System.Web.Mvc;
 namespace AutomatedTellerMachine.Controllers
 {
     public class HomeController : Controller
-
         // msdn ActionResult class
     {
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        [Authorize]
         [MyLoggingFilter]
         public ActionResult Index()
         {
+            var userId = User.Identity.GetUserId();
+            var checkingAccountId = db.CheckingAccounts.Where(c => c.ApplicationUserId == userId).FirstOrDefault().Id;
+            ViewBag.CheckingAccountId = checkingAccountId;
             return View();
         }
 

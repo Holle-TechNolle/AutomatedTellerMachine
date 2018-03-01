@@ -9,26 +9,26 @@ namespace AutomatedTellerMachine.Controllers
 {
     public class CheckingAccountController : Controller
     {
-        // GET: CheckingAccountModel
+        // GET: CheckingAccount
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: CheckingAccountModel/Details/5
+        // GET: CheckingAccount/Details/5
         public ActionResult Details()
         {
-            var checkingAccount = new CheckingAccountModel { AccountNumber = "000213245", FirstName = "Holger", LastName = "Trankjær", Balance = 453 };
+            var checkingAccount = new CheckingAccount { AccountNumber = "000213245", FirstName = "Holger", LastName = "Trankjær", Balance = 453 };
             return View(checkingAccount);
         }
 
-        // GET: CheckingAccountModel/Create
+        // GET: CheckingAccount/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: CheckingAccountModel/Create
+        // POST: CheckingAccount/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -44,13 +44,13 @@ namespace AutomatedTellerMachine.Controllers
             }
         }
 
-        // GET: CheckingAccountModel/Edit/5
+        // GET: CheckingAccount/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: CheckingAccountModel/Edit/5
+        // POST: CheckingAccount/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -66,13 +66,13 @@ namespace AutomatedTellerMachine.Controllers
             }
         }
 
-        // GET: CheckingAccountModel/Delete/5
+        // GET: CheckingAccount/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: CheckingAccountModel/Delete/5
+        // POST: CheckingAccount/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

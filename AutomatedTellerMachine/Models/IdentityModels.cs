@@ -30,6 +30,8 @@ namespace AutomatedTellerMachine.Models
             return new ApplicationDbContext();
         }
 
-        public DbSet<CheckingAccountModel> CheckingAccounts { get; set; }
+        public DbSet<CheckingAccount> CheckingAccounts { get; set; }
+
+        public DbSet<Transaction> Transactions { get; set; }
     }
 }
