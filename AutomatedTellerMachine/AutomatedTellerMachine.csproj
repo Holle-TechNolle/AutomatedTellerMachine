@@ -198,13 +198,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201803011306400_InitialCreate.cs" />
-    <Compile Include="Migrations\201803011306400_InitialCreate.Designer.cs">
-      <DependentUpon>201803011306400_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201803011327174_AccountNumberChanges.cs" />
-    <Compile Include="Migrations\201803011327174_AccountNumberChanges.Designer.cs">
-      <DependentUpon>201803011327174_AccountNumberChanges.cs</DependentUpon>
+    <Compile Include="Migrations\201803311151093_FirstTime.cs" />
+    <Compile Include="Migrations\201803311151093_FirstTime.Designer.cs">
+      <DependentUpon>201803311151093_FirstTime.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -342,11 +338,8 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201803011306400_InitialCreate.resx">
-      <DependentUpon>201803011306400_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201803011327174_AccountNumberChanges.resx">
-      <DependentUpon>201803011327174_AccountNumberChanges.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201803311151093_FirstTime.resx">
+      <DependentUpon>201803311151093_FirstTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

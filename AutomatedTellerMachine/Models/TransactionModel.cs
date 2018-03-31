@@ -17,6 +17,6 @@ namespace AutomatedTellerMachine.Models
         [Required]
         [Display(Name ="Checking Account Id")]
         public int CheckingAccountId { get; set; }
-        public virtual CheckingAccount CheckingAccount { get; set; }
+        public virtual CheckingAccountModels CheckingAccount { get; set; }
     }
 }

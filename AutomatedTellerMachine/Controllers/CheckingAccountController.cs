@@ -13,13 +13,13 @@ namespace AutomatedTellerMachine.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: CheckingAccount
+        // GET: CheckingAccountModels
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: CheckingAccount/Details/5
+        // GET: CheckingAccountModels/Details/5
         public ActionResult Details()
         {
             var userId = User.Identity.GetUserId();
@@ -33,13 +33,13 @@ namespace AutomatedTellerMachine.Controllers
         }
 
 
-        // GET: CheckingAccount/Create
+        // GET: CheckingAccountModels/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: CheckingAccount/Create
+        // POST: CheckingAccountModels/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -55,13 +55,13 @@ namespace AutomatedTellerMachine.Controllers
             }
         }
 
-        // GET: CheckingAccount/Edit/5
+        // GET: CheckingAccountModels/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: CheckingAccount/Edit/5
+        // POST: CheckingAccountModels/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -77,13 +77,13 @@ namespace AutomatedTellerMachine.Controllers
             }
         }
 
-        // GET: CheckingAccount/Delete/5
+        // GET: CheckingAccountModels/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: CheckingAccount/Delete/5
+        // POST: CheckingAccountModels/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

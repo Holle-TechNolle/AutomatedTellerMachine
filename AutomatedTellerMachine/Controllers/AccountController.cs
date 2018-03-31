@@ -157,7 +157,7 @@ namespace AutomatedTellerMachine.Controllers
                 {
                     var db = new ApplicationDbContext();
                     var accountNumber = (123456 + db.CheckingAccounts.Count()).ToString().PadLeft(10,'0');
-                    var checkingAccount = new CheckingAccount
+                    var checkingAccount = new CheckingAccountModels
                     {
                         FirstName = model.FirstName,
                         LastName = model.LastName,
